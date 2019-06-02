@@ -14,7 +14,7 @@ public class Viewer extends JFrame {
 
     private Button save = new Button("Save");
     private Button reset = new Button("Reset");
-    private JLabel textToEnter = new JLabel("one ring to rule them all one ring to find them one ring to bring them all and in the darkness bind them");
+    private JLabel textToEnter = new JLabel("stoi na stacji lokomotywa ciezka ogromna pot z niej splywa");
     private JLabel nameLabel = new JLabel("Your name: ");
     private JLabel textHint = new JLabel("Enter following text: ");
     private JTextField name = new JTextField();
@@ -60,12 +60,13 @@ public class Viewer extends JFrame {
             @Override
             public void keyPressed(KeyEvent e) {
                 lastCode = e.getKeyCode();
+                if (lastCode!= 32)
                 timeLast = System.currentTimeMillis();
             }
 
             @Override
             public void keyReleased(KeyEvent e) {
-                if (lastCode != -1) {
+                if (lastCode != -1 && lastCode !=32) {
                     long measuredTime =
                             System.currentTimeMillis() - timeLast;
                     System.out.println(String.format("Code: %d, time %d", lastCode, measuredTime));
@@ -77,7 +78,7 @@ public class Viewer extends JFrame {
         save.addActionListener(e -> {
             String enteredText = text.getText();
             if (enteredText.equals(textToEnter.getText())) {
-                if (list.size() == 104) {
+                if (list.size() == 49) {
                     String yourName = name.getText();
                     System.out.println("Dobrze " + yourName);
                     File file = new File(yourName + "1.txt");
