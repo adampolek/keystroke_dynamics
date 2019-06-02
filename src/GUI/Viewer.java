@@ -60,13 +60,12 @@ public class Viewer extends JFrame {
             @Override
             public void keyPressed(KeyEvent e) {
                 lastCode = e.getKeyCode();
-                if (lastCode!= 32)
                 timeLast = System.currentTimeMillis();
             }
 
             @Override
             public void keyReleased(KeyEvent e) {
-                if (lastCode != -1 && lastCode !=32) {
+                if (lastCode != -1) {
                     long measuredTime =
                             System.currentTimeMillis() - timeLast;
                     System.out.println(String.format("Code: %d, time %d", lastCode, measuredTime));
@@ -78,7 +77,7 @@ public class Viewer extends JFrame {
         save.addActionListener(e -> {
             String enteredText = text.getText();
             if (enteredText.equals(textToEnter.getText())) {
-                if (list.size() == 49) {
+                if (list.size() == 58) {
                     String yourName = name.getText();
                     System.out.println("Dobrze " + yourName);
                     File file = new File(yourName + "1.txt");
