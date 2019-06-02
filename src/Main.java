@@ -12,7 +12,7 @@ public class Main {
         Classification classification = new Classification();
 
         classification.load("slawko");
-        System.out.println(Arrays.toString(classification.featuresVectorListist.get(0).getFeaturesArray()));
+        System.out.println(classification.featuresVectorListist.get(0).getFeaturesArray().length);
         System.out.println(Arrays.toString(classification.featuresVectorListist.get(1).getFeaturesArray()));
         System.out.println(Arrays.toString(classification.featuresVectorListist.get(2).getFeaturesArray()));
 

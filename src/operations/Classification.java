@@ -17,7 +17,7 @@ public class Classification {
     }
 
     public void loadFromFile(String filename,String number){
-        int[] array = new int[49];
+        int[] array = new int[58];
         try {
             Scanner s = new Scanner(new File(filename+number));
             for (int i = 0; i < array.length; i++)

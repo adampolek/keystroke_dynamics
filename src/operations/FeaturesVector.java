@@ -3,7 +3,7 @@ package operations;
 public class FeaturesVector {
 
     String name;
-    int[] featuresArray = new int[49];
+    int[] featuresArray = new int[58];
 
     public String getName() {
         return name;
