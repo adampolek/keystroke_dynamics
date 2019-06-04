@@ -5,19 +5,15 @@ public class FeaturesVector {
     String name;
     int[] featuresArray = new int[58];
 
-    public String getName() {
+    String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    void setName(String name) {
         this.name = name;
     }
 
-    public int[] getFeaturesArray() {
-        return featuresArray;
-    }
-
-    public void setFeaturesArray(int[] featuresArray) {
+    void setFeaturesArray(int[] featuresArray) {
         this.featuresArray = featuresArray;
     }
 }

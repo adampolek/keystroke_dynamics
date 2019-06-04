@@ -12,27 +12,23 @@ public class Person {
         this.distance = distance;
     }
 
-    public String getName() {
+    String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getCount() {
+    int getCount() {
         return count;
     }
 
-    public void setCount(int count) {
+    void setCount(int count) {
         this.count = count;
     }
 
-    public float getDistance() {
+    float getDistance() {
         return distance;
     }
 
-    public void setDistance(float distance) {
+    void setDistance(float distance) {
         this.distance = distance;
     }
 }

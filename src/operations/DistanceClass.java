@@ -3,21 +3,21 @@ package operations;
 public class DistanceClass {
 
     float distance;
-    String name;
+    private String name;
 
-    public float getDistance() {
+    float getDistance() {
         return distance;
     }
 
-    public void setDistance(float distance) {
+    void setDistance(float distance) {
         this.distance = distance;
     }
 
-    public String getName() {
+    String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    void setName(String name) {
         this.name = name;
     }
 

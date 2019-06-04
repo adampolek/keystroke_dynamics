@@ -1,8 +1,6 @@
 import GUI.Viewer;
 import operations.Classification;
 
-import java.util.Arrays;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -14,11 +12,16 @@ public class Main {
         classification.load("slawko");
         classification.load("adam");
         classification.load("exo");
-        /*System.out.println(Arrays.toString(classification.featuresVectorList.get(0).getFeaturesArray()));
-        System.out.println(Arrays.toString(classification.featuresVectorList.get(1).getFeaturesArray()));
-        System.out.println(Arrays.toString(classification.featuresVectorList.get(2).getFeaturesArray()));*/
+        classification.load("Andzik");
+        classification.load("Mazak");
+        classification.load("Pfajer");
+        classification.load("Macion");
+        classification.load("Zuzia");
+        classification.load("damian");
+        classification.load("przemek");
 
-        classification.knn(5);
+        classification.classifyAll();
+        classification.printQuality();
 
     }
 }

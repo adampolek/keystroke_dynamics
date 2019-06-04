@@ -1,20 +1,19 @@
 package operations;
 
-public class Metrics {
+class Metrics {
 
 
-    public float euklides(int[] xArray, int [] yArray){
+    float euklides(int[] xArray, int[] yArray){
 
         int sum = 0;
         for (int i=0; i<xArray.length;i++){
             sum+=Math.pow(xArray[i]-yArray[i],2);
         }
-        float result = (float) Math.sqrt(sum);
 
-        return result;
+        return (float) Math.sqrt(sum);
     }
 
-    public float manhattan(int[] xArray, int [] yArray){
+    float manhattan(int[] xArray, int[] yArray){
 
         int sum = 0;
         for (int i=0; i<xArray.length;i++){
@@ -24,7 +23,7 @@ public class Metrics {
         return sum;
     }
 
-    public float czebyszew(int[] xArray, int [] yArray){
+    float czebyszew(int[] xArray, int[] yArray){
 
         int temp = 0;
         int result = 0;
